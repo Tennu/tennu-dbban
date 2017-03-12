@@ -1,0 +1,30 @@
+{
+  "name": "tennu-dbban",
+  "version": "1.0.0",
+  "description": "A plugin for the tennu IRC framework, uses tennu-ban and stores ban in a database.",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tennu/tennu-dbban"
+  },
+  "scripts": {
+    "eslint": "eslint .",
+    "test": "mocha",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "author": "Victorio Berra",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "tennu-dbcore": "^2"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "lodash": "^4.17.2",
+    "mocha": "^3.2.0",
+    "should": "^11.1.2",
+    "sqlite3": "^3.1.8",
+    "tennu-admin": "^4.0.1",
+    "tennu-ban": "^1.0.0"
+  }
+}
